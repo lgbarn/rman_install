@@ -1,0 +1,35 @@
+pdb1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = primary.localdomain)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pdb1.localdomain)
+    )
+  )
+primary =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = primary.localdomain)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = orcl.localdomain)
+    )
+  )
+
+rmancat =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rmancat.localdomain)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = rmancat)
+    )
+  )
+
+rcatpdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rmancat.localdomain)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = rcatpdb)
+    )
+  )
+
